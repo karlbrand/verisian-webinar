@@ -1,0 +1,96 @@
+---
+title: "How Generative AI and Knowledge Graphs Will Transform Clinical Trial Programming"
+format:
+  revealjs:
+    slide-number: true
+    theme: solarized
+# editor: visual
+author: Karl Brand
+date: "May 24th, 2024"
+---
+
+## Disclaimer
+
+# I. Introduciton [context]
+
+## Why are we here
+
+     To communicate our quantitative measures of therapy safety and
+     efficacy in patients to third parties for evaluation of health
+     value.
+
+## As-Is (Legacy Processes: 2024 or 1994?)
+
+     a. Data Storage
+     b. Data Transformation
+     c. Processes: the solo programmer & double programming
+     d. Challenges unique to the Domain (data privacy), Silo everything:
+        Data and code and tools are closed source
+
+## To-Be (learn from the best, that is the  software development industry)
+
+     a. Version Control: the data and the code
+     b. Agile development: collaboration, iteration, open-ish source
+        (democratize the (mostly open source) tools and processes)
+     c. Make it all accessible to any-one (data scientist, shareholder,
+        regulator), any-time, any-how
+
+# II. Inflection [pivot]
+  
+## Impediments to change
+
+     a. Incumbents: technologies, infrastructure resource investment
+     b. Mindset: agile, open source
+     c. Generation change
+     d. Existing, highly complex, SAS code base
+     e. Motivation
+
+## What can and should we do today
+
+     a. Accept the as-is (work with what we've got), and commit to change (allocate time, money and people)
+     b. What we can and should we do today.
+
+# III. Building the Future: upgrade the engine while the car is driving
+
+## Get a handle on our data and code: overlay a semantic data model on existing data and code
+
+     a. Data and code => it's all just ETL, so let's do it properly
+     b. Previous efforts to build an ontology, (top down from standards, have so far not delivered)
+        << consider to insert hand drawn summary here >>
+     c. Take a different approach (bottom up from code)
+
+## Bottom up Knowledge Graphs: _under_pin a sematic data model on existing data and code
+
+     a. Not lost in translation: code is _the_ execution level, not documentatation and meta-data strandards, SAPs and so forth
+     b. Works with _all_ previous and current code
+     c. Machines can parse all the code
+
+## Deterministically read machine parsed code
+
+     a. Fully automate the graph creation
+     b. 100% explainable, no halucinations
+     c. Universal code logic extraction
+
+## Single source of truth feeds other processes
+
+     a. Create Documentation (definitions and descriptions) for humans
+     b. Translate to other languages: R and Python (break out of the SAS trap)
+     c. end-to-end tracability with a complete dependancy map: breaking changes
+
+## But wait, won't LLMs deliver our golden future (and replace humans)?
+
+     a. In short no, becuase they are probabilistic and determinism is at the heart of drug development (esp back translation)
+     b. But they will be useful for support tasks
+
+## LLMs will accelerate human efforts (nothing new, but let's run through the existing list)
+
+     a. Draft text creation: e.g. CSR
+     b. Draft code documentatation
+     c. Draft code creation
+     e. Natural langauige intgerface to tabular and relational database stores
+     f. Synthetic data creation (to liberate clinical data from Silos)
+
+## Summary
+
+## Acknowledgements (?)
+
