@@ -4,14 +4,16 @@ format:
   revealjs:
     theme: [default, custom.scss]
     #incremental: true
-    #slide-number: true
+    slide-number: true
+    footer: https://github.com/karlbrand/verisian-webinar
 # editor: visual
 include-in-header:
   - text: |
       <style>
       #title-slide .title {
         font-size: 1.7em;
-        color: #b22222;
+        <!-- color: #b22222; -->
+        color: #F4BA02;
       }
       </style>
 from: markdown+emoji
@@ -21,37 +23,43 @@ date-format: iso
 ---
 
 ## Disclaimer
+<br />
+There are no contracts for payment, draft or otherwise between myself or my employer and Verisian.
+<br />
+<br />
+The written and expressed views in this presentation are entirely those of the presenter; they are not intended to be representative in any way of my employer, Bayer Aktiengesellschaft.
 
 # I. Introduction [context]
 
 ## Why are we here
+<br />
+To communicate our quantitative measures of therapy safety and efficacy in patients to third parties for evaluation of health value.
 
-     To communicate our quantitative measures of therapy safety and
-     efficacy in patients to third parties for evaluation of health
-     value.
+. . . 
+
+<br />
+<br />
+[To change for the better how we do this.]{.yellow}
+
+::: {.notes}
+Speaker notes go here.
+:::
 
 ## As-Is (Legacy Processes: 2024 or 1994?)
 
-::: {.incremental}
+<!-- ::: {.incremental} -->
 a. Data Storage
-
 b. Data Transformation
-
 c. Processes: the solo programmer & double programming
-
-d. Challenges unique to the Domain (data privacy), Silo everything:
-  Data and code and tools are closed source
-  
-:wave:
-:::
+d. Challenges unique to the Domain (data privacy), Silo everything: Data and code and tools are closed source
+<!-- :wave: -->
+<!-- ::: -->
 
 ## To-Be (learn from the best, that is the  software development industry)
 
-     a. Version Control: the data and the code
-     b. Agile development: collaboration, iteration, open-ish source
-        (democratize the (mostly open source) tools and processes)
-     c. Make it all accessible to any-one (data scientist, shareholder,
-        regulator), any-time, any-how
+a. Version Control: the data and the code
+b. Agile development: collaboration, iteration, open-ish source (democratize the (mostly open source) tools and processes)
+c. Make it all accessible to any-one (data scientist, shareholder, regulator), any-time, any-how
 
 # II. Inflection [pivot]
   

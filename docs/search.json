@@ -4,28 +4,28 @@
     "href": "verisian-webinar.html#disclaimer",
     "title": "How Generative AI and Knowledge Graphs Will Transform Clinical Trial Programming",
     "section": "Disclaimer",
-    "text": "Disclaimer"
+    "text": "Disclaimer\n There are no contracts for payment, draft or otherwise between myself or my employer and Verisian.   The written and expressed views in this presentation are entirely those of the presenter; they are not intended to be representative in any way of my employer, Bayer Aktiengesellschaft."
   },
   {
     "objectID": "verisian-webinar.html#why-are-we-here",
     "href": "verisian-webinar.html#why-are-we-here",
     "title": "How Generative AI and Knowledge Graphs Will Transform Clinical Trial Programming",
     "section": "Why are we here",
-    "text": "Why are we here\n To communicate our quantitative measures of therapy safety and\n efficacy in patients to third parties for evaluation of health\n value."
+    "text": "Why are we here\n To communicate our quantitative measures of therapy safety and efficacy in patients to third parties for evaluation of health value.\n\n  To change for the better how we do this.\n\nSpeaker notes go here."
   },
   {
     "objectID": "verisian-webinar.html#as-is-legacy-processes-2024-or-1994",
     "href": "verisian-webinar.html#as-is-legacy-processes-2024-or-1994",
     "title": "How Generative AI and Knowledge Graphs Will Transform Clinical Trial Programming",
     "section": "As-Is (Legacy Processes: 2024 or 1994?)",
-    "text": "As-Is (Legacy Processes: 2024 or 1994?)\n\n\nData Storage\nData Transformation\nProcesses: the solo programmer & double programming\nChallenges unique to the Domain (data privacy), Silo everything: Data and code and tools are closed source\n\n👋"
+    "text": "As-Is (Legacy Processes: 2024 or 1994?)\n\n\nData Storage\nData Transformation\nProcesses: the solo programmer & double programming\nChallenges unique to the Domain (data privacy), Silo everything: Data and code and tools are closed source"
   },
   {
     "objectID": "verisian-webinar.html#to-be-learn-from-the-best-that-is-the-software-development-industry",
     "href": "verisian-webinar.html#to-be-learn-from-the-best-that-is-the-software-development-industry",
     "title": "How Generative AI and Knowledge Graphs Will Transform Clinical Trial Programming",
     "section": "To-Be (learn from the best, that is the software development industry)",
-    "text": "To-Be (learn from the best, that is the software development industry)\n a. Version Control: the data and the code\n b. Agile development: collaboration, iteration, open-ish source\n    (democratize the (mostly open source) tools and processes)\n c. Make it all accessible to any-one (data scientist, shareholder,\n    regulator), any-time, any-how"
+    "text": "To-Be (learn from the best, that is the software development industry)\n\nVersion Control: the data and the code\nAgile development: collaboration, iteration, open-ish source (democratize the (mostly open source) tools and processes)\nMake it all accessible to any-one (data scientist, shareholder, regulator), any-time, any-how"
   },
   {
     "objectID": "verisian-webinar.html#impediments-to-change",
@@ -95,6 +95,6 @@
     "href": "verisian-webinar.html#acknowledgements",
     "title": "How Generative AI and Knowledge Graphs Will Transform Clinical Trial Programming",
     "section": "Acknowledgements (?)",
-    "text": "Acknowledgements (?)"
+    "text": "Acknowledgements (?)\n\n\n\nhttps://github.com/karlbrand/verisian-webinar"
   }
 ]
