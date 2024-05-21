@@ -2,19 +2,27 @@
 title: "How Generative AI and Knowledge Graphs Will Transform Clinical Trial Programming"
 format:
   revealjs:
-    # incremental: true
-    slide-number: true
-    # theme: solarized
-    theme: moon
+    theme: [default, custom.scss]
+    #incremental: true
+    #slide-number: true
 # editor: visual
+include-in-header:
+  - text: |
+      <style>
+      #title-slide .title {
+        font-size: 1.7em;
+        color: #b22222;
+      }
+      </style>
 from: markdown+emoji
 author: Karl Brand
-date: "May 24th, 2024"
+date: 2024-05-24
+date-format: iso
 ---
 
 ## Disclaimer
 
-# I. Introduciton [context]
+# I. Introduction [context]
 
 ## Why are we here
 
