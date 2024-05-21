@@ -1,0 +1,100 @@
+[
+  {
+    "objectID": "verisian-webinar.html#disclaimer",
+    "href": "verisian-webinar.html#disclaimer",
+    "title": "How Generative AI and Knowledge Graphs Will Transform Clinical Trial Programming",
+    "section": "Disclaimer",
+    "text": "Disclaimer"
+  },
+  {
+    "objectID": "verisian-webinar.html#why-are-we-here",
+    "href": "verisian-webinar.html#why-are-we-here",
+    "title": "How Generative AI and Knowledge Graphs Will Transform Clinical Trial Programming",
+    "section": "Why are we here",
+    "text": "Why are we here\n To communicate our quantitative measures of therapy safety and\n efficacy in patients to third parties for evaluation of health\n value."
+  },
+  {
+    "objectID": "verisian-webinar.html#as-is-legacy-processes-2024-or-1994",
+    "href": "verisian-webinar.html#as-is-legacy-processes-2024-or-1994",
+    "title": "How Generative AI and Knowledge Graphs Will Transform Clinical Trial Programming",
+    "section": "As-Is (Legacy Processes: 2024 or 1994?)",
+    "text": "As-Is (Legacy Processes: 2024 or 1994?)\n\n\nData Storage\nData Transformation\nProcesses: the solo programmer & double programming\nChallenges unique to the Domain (data privacy), Silo everything: Data and code and tools are closed source\n\n👋"
+  },
+  {
+    "objectID": "verisian-webinar.html#to-be-learn-from-the-best-that-is-the-software-development-industry",
+    "href": "verisian-webinar.html#to-be-learn-from-the-best-that-is-the-software-development-industry",
+    "title": "How Generative AI and Knowledge Graphs Will Transform Clinical Trial Programming",
+    "section": "To-Be (learn from the best, that is the software development industry)",
+    "text": "To-Be (learn from the best, that is the software development industry)\n a. Version Control: the data and the code\n b. Agile development: collaboration, iteration, open-ish source\n    (democratize the (mostly open source) tools and processes)\n c. Make it all accessible to any-one (data scientist, shareholder,\n    regulator), any-time, any-how"
+  },
+  {
+    "objectID": "verisian-webinar.html#impediments-to-change",
+    "href": "verisian-webinar.html#impediments-to-change",
+    "title": "How Generative AI and Knowledge Graphs Will Transform Clinical Trial Programming",
+    "section": "Impediments to change",
+    "text": "Impediments to change\n a. Incumbents: technologies, infrastructure resource investment\n b. Mindset: agile, open source\n c. Generation change\n d. Existing, highly complex, SAS code base\n e. Motivation"
+  },
+  {
+    "objectID": "verisian-webinar.html#what-can-and-should-we-do-today",
+    "href": "verisian-webinar.html#what-can-and-should-we-do-today",
+    "title": "How Generative AI and Knowledge Graphs Will Transform Clinical Trial Programming",
+    "section": "What can and should we do today",
+    "text": "What can and should we do today\n a. Accept the as-is (work with what we've got), and commit to change (allocate time, money and people)\n b. What we can and should we do today."
+  },
+  {
+    "objectID": "verisian-webinar.html#get-a-handle-on-our-data-and-code-overlay-a-semantic-data-model-on-existing-data-and-code",
+    "href": "verisian-webinar.html#get-a-handle-on-our-data-and-code-overlay-a-semantic-data-model-on-existing-data-and-code",
+    "title": "How Generative AI and Knowledge Graphs Will Transform Clinical Trial Programming",
+    "section": "Get a handle on our data and code: overlay a semantic data model on existing data and code",
+    "text": "Get a handle on our data and code: overlay a semantic data model on existing data and code\n a. Data and code =&gt; it's all just ETL, so let's do it properly\n b. Previous efforts to build an ontology, (top down from standards, have so far not delivered)\n    &lt;&lt; consider to insert hand drawn summary here &gt;&gt;\n c. Take a different approach (bottom up from code)"
+  },
+  {
+    "objectID": "verisian-webinar.html#bottom-up-knowledge-graphs-_under_pin-a-sematic-data-model-on-existing-data-and-code",
+    "href": "verisian-webinar.html#bottom-up-knowledge-graphs-_under_pin-a-sematic-data-model-on-existing-data-and-code",
+    "title": "How Generative AI and Knowledge Graphs Will Transform Clinical Trial Programming",
+    "section": "Bottom up Knowledge Graphs: _under_pin a sematic data model on existing data and code",
+    "text": "Bottom up Knowledge Graphs: _under_pin a sematic data model on existing data and code\n a. Not lost in translation: code is _the_ execution level, not documentatation and meta-data strandards, SAPs and so forth\n b. Works with _all_ previous and current code\n c. Machines can parse all the code"
+  },
+  {
+    "objectID": "verisian-webinar.html#deterministically-read-machine-parsed-code",
+    "href": "verisian-webinar.html#deterministically-read-machine-parsed-code",
+    "title": "How Generative AI and Knowledge Graphs Will Transform Clinical Trial Programming",
+    "section": "Deterministically read machine parsed code",
+    "text": "Deterministically read machine parsed code\n a. Fully automate the graph creation\n b. 100% explainable, no halucinations\n c. Universal code logic extraction"
+  },
+  {
+    "objectID": "verisian-webinar.html#single-source-of-truth-feeds-other-processes",
+    "href": "verisian-webinar.html#single-source-of-truth-feeds-other-processes",
+    "title": "How Generative AI and Knowledge Graphs Will Transform Clinical Trial Programming",
+    "section": "Single source of truth feeds other processes",
+    "text": "Single source of truth feeds other processes\n a. Create Documentation (definitions and descriptions) for humans\n b. Translate to other languages: R and Python (break out of the SAS trap)\n c. end-to-end tracability with a complete dependancy map: breaking changes"
+  },
+  {
+    "objectID": "verisian-webinar.html#but-wait-wont-llms-deliver-our-golden-future-and-replace-humans",
+    "href": "verisian-webinar.html#but-wait-wont-llms-deliver-our-golden-future-and-replace-humans",
+    "title": "How Generative AI and Knowledge Graphs Will Transform Clinical Trial Programming",
+    "section": "But wait, won’t LLMs deliver our golden future (and replace humans)?",
+    "text": "But wait, won’t LLMs deliver our golden future (and replace humans)?\n a. In short no, becuase they are probabilistic and determinism is at the heart of drug development (esp back translation)\n b. But they will be useful for support tasks"
+  },
+  {
+    "objectID": "verisian-webinar.html#llms-will-accelerate-human-efforts-nothing-new-but-lets-run-through-the-existing-list",
+    "href": "verisian-webinar.html#llms-will-accelerate-human-efforts-nothing-new-but-lets-run-through-the-existing-list",
+    "title": "How Generative AI and Knowledge Graphs Will Transform Clinical Trial Programming",
+    "section": "LLMs will accelerate human efforts (nothing new, but let’s run through the existing list)",
+    "text": "LLMs will accelerate human efforts (nothing new, but let’s run through the existing list)\n a. Draft text creation: e.g. CSR\n b. Draft code documentatation\n c. Draft code creation\n e. Natural langauige intgerface to tabular and relational database stores\n f. Synthetic data creation (to liberate clinical data from Silos)"
+  },
+  {
+    "objectID": "verisian-webinar.html#summary",
+    "href": "verisian-webinar.html#summary",
+    "title": "How Generative AI and Knowledge Graphs Will Transform Clinical Trial Programming",
+    "section": "Summary",
+    "text": "Summary"
+  },
+  {
+    "objectID": "verisian-webinar.html#acknowledgements",
+    "href": "verisian-webinar.html#acknowledgements",
+    "title": "How Generative AI and Knowledge Graphs Will Transform Clinical Trial Programming",
+    "section": "Acknowledgements (?)",
+    "text": "Acknowledgements (?)"
+  }
+]

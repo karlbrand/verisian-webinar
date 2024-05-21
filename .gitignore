@@ -3,3 +3,4 @@
 *.Rhistory
 /.quarto/
 /_site/
+*.BAK

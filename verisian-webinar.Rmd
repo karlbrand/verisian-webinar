@@ -2,9 +2,12 @@
 title: "How Generative AI and Knowledge Graphs Will Transform Clinical Trial Programming"
 format:
   revealjs:
+    # incremental: true
     slide-number: true
-    theme: solarized
+    # theme: solarized
+    theme: moon
 # editor: visual
+from: markdown+emoji
 author: Karl Brand
 date: "May 24th, 2024"
 ---
@@ -21,11 +24,18 @@ date: "May 24th, 2024"
 
 ## As-Is (Legacy Processes: 2024 or 1994?)
 
-     a. Data Storage
-     b. Data Transformation
-     c. Processes: the solo programmer & double programming
-     d. Challenges unique to the Domain (data privacy), Silo everything:
-        Data and code and tools are closed source
+::: {.incremental}
+a. Data Storage
+
+b. Data Transformation
+
+c. Processes: the solo programmer & double programming
+
+d. Challenges unique to the Domain (data privacy), Silo everything:
+  Data and code and tools are closed source
+  
+:wave:
+:::
 
 ## To-Be (learn from the best, that is the  software development industry)
 
