@@ -2,8 +2,12 @@
 title: "How Generative AI and Knowledge Graphs Will Transform Clinical Trial Programming"
 format:
   revealjs:
+    width: 1250
+    margin: 0.075
     theme: [default, custom.scss]
     #incremental: true
+    transition: fade
+    transition-speed: fast
     slide-number: true
     footer: https://github.com/karlbrand/verisian-webinar
 # editor: visual
@@ -24,16 +28,39 @@ date-format: iso
 
 ## Disclaimer
 <br />
-There are no contracts for payment, draft or otherwise between myself or my employer and Verisian.
+Neither I nor my employer receive any payment or benefits from Verisian.
 <br />
 <br />
-The written and expressed views in this presentation are entirely those of the presenter; they are not intended to be representative in any way of my employer, Bayer Aktiengesellschaft.
+The written and expressed views in this presentation are entirely those of the presenter; they are not intended to be representative of my employer, Bayer Aktiengesellschaft.
 
-# I. Introduction [context]
+::: {.notes}
+- I'm not getting paid by Verisian nor am i incentivized in any way to promote their company or products.
+- This presentation is made by myself and on behalf of myself.
+- Opinions are my own and not those of my employer, Bayer.
+- Just on opinions - that's all they are. I'm a scientist with a back ground in genomics and biomarkers.
+- And though I'ved worked to ensure my opinions align with facts and other observations...
+- If you think I'm getting something wrong then please call me out in the Q&A for both my and the audiences benefit. - There's a lot I'm still learning after 7 years or so in the industry.
+:::
 
-## Why are we here
+## Contents
+
+I.   Introduction
+II.  Inflection [[pivot]]{.yellow}
+III. Building the Future: upgrade the engine while the car is driving
+
+::: {.notes}
+- structure of what I'll take us through over the next 30mins
+:::
+
+# I. Introduction [[context]]{.yellow}
+
+::: {.notes}
+- First we need context.
+:::
+
+## Why are we here?
 <br />
-To communicate our quantitative measures of therapy safety and efficacy in patients to third parties for evaluation of health value.
+To [communicate]{.yellow} our quantitative measures of therapy safety and efficacy in patients to third parties for evaluation of health value.
 
 . . . 
 
@@ -42,81 +69,315 @@ To communicate our quantitative measures of therapy safety and efficacy in patie
 [To change for the better how we do this.]{.yellow}
 
 ::: {.notes}
-Speaker notes go here.
+- I want to take a few moments to linger on the 'why' of why I'm asking you for 30mins of *your* time today.
+- I'll be talking around the topic of statistical programming processes today.
+- But it's important to remember what the whole drug-development endeavour is about:
+  - making medicine that helps people, and...
+  - being able to *communicate* to those charged with safeguarding peoples health and well being, the facts and many details about how  effectively our medicines work and so forth
+- And! To see how we can *change* this process for the better, or *improve* it.
+- The deliverable of this persentation is to convince you there is a better way to get statisitcal programming done, and, 
+- *to motivate you and your team, your entire company, to take action today!*
 :::
 
-## As-Is (Legacy Processes: 2024 or 1994?)
+## This is personal 
+
+<br />
+Statistical Programming Analyst:
+<br />
+
+::: columns
+::: {.column width="60%"}
+Surya [[SAS ninja]]{.yellow}
+:::
+
+::: {.column width="35%"}
+![](images/surya.png)
+:::
+:::
+
+::: footer
+Image credit: https://easy-peasy.ai/
+:::
+
+::: {.notes}
+- To Do
+:::
+
+## This is personal 
+
+<br />
+Statistical Programming Analyst:
+<br />
+
+::: columns
+::: {.column width="60%"}
+Surya [[SAS ninja]]{.yellow}
+
+Works with a mountain of SAS code...
+
+:::
+
+::: {.column width="35%"}
+![](images/mountain_of_sas.png)
+:::
+:::
+
+::: footer
+Image was created with the assistance of DALL·E 2
+:::
+
+::: {.notes}
+- To Do
+:::
+
+## This is personal 
+
+<br />
+Statistical Programming Analyst:
+<br />
+
+::: columns
+::: {.column width="60%"}
+Surya [[SAS ninja]]{.yellow}
+
+Works with a mountain of SAS code...
+
+To deliver a [Clinical Study Report]{.yellow}
+:::
+
+::: {.column width="35%"}
+![](images/csr_00.png)
+:::
+:::
+
+::: footer
+Image was created with the assistance of DALL·E 2
+:::
+
+::: {.notes}
+- To Do
+:::
+
+## Surya's Challenges in 2024
+
+### Legacy Processes: 2024 or 1994? [[as-is]]{.yellow}
 
 <!-- ::: {.incremental} -->
 a. Data Storage
 b. Data Transformation
 c. Processes: the solo programmer & double programming
-d. Challenges unique to the Domain (data privacy), Silo everything: Data and code and tools are closed source
+d. Silo everything: challenges unique to the Domain (data privacy):
+<br />
+   Data and code and tools are closed source
 <!-- :wave: -->
 <!-- ::: -->
 
-## To-Be (learn from the best, that is the  software development industry)
+::: {.notes}
+- First: there is the data. This typically arrives at Surya's teams desks as flat-files of tables locked up in a proprietary file format like sas7bdat archive files. And not just one file, but many. And not with unique feature or variable sets but with redundancy. And with a set of variables or 'data models' which differ between studies and over time.
+- Countless hours have been invested to create standards to ease interoperability across studies, teams companies and so forth: CDISC Analysis Data Model (CDISC - ADaM) and Study Data Tabulation Model (CDISC - STDM)
+- Where are these files stored? Probably on a network file share. In a mostly, but entirely, standardised (but arcane) folder hierarchy. Invented by a sys-admin who knows linux, but not UX.
+- Surya will need some days, or weeks, to familiarize her self with the mere structure of the study data.
 
-a. Version Control: the data and the code
-b. Agile development: collaboration, iteration, open-ish source (democratize the (mostly open source) tools and processes)
-c. Make it all accessible to any-one (data scientist, shareholder, regulator), any-time, any-how
+- Second: there is what we do to the data. Surya transforms some variables from one format to another according to a set of specifications another team drafted. This may be units of measurement, different international standards for certain data types like dates, and so forth. In computer science this might be akin to the 'T' for 'transformation' in the ETL process. Some excellent software developed for ETL applications. But manual writing and maintenance of SAS code is not one them!
+- Surya will toil for some days or weeks on the code that manages the transformation of the clinical trial data her team is supporting.
 
-# II. Inflection [pivot]
-  
+- Third: Surya will deal with the first two challenges alone. That is, navigating the study files on the network drive, the countless SAS programs and macros already written, and of course writing what ever changes, updates or new SAS programs are defined in the documentation for this specific study, like the Statistical Analysis Plan or SAP.
+- On top of doing this alone, a second human will re-write, from scratch much or all of the code Surya wrote to create the tables, listings and figures for the CSR. If both programmers code produce the same out-put it means that they either both did it correctly, or they both made the same mistake. Fair enough, it's almost always the correct out come. But it's a lot of energy with no gain beyond a consensus is programming.
+
+- Fourth and last in my misery-list are challenges unique to the domain of itself. Namely data privacy owing to the source of the data: us. These are measurements about our most intimate selves. I'm a pretty person but even I'm not comfortable advertising certain measurements of my body. No doubt your the same. This means a LOT of resources are invested to ensure clinical data is held under strictly enforced access controls.
+- Stewart Brand (no relation) was quoted: "Information wants to be free". It seams he was not referring to clinical data.
+- In contrast to the virtues of the open-source movement which has delivered much of the tooling needed to build, arguable, humanities greatest achievement to date - the internet - the justifiable siloing of clinical data has seeded the approach I think, that *everything* around it should also be carefully guarded and locked away: the code we write to do the data processing, the langauge we use to write the code (still mostly SAS), the systems we use, Oracle, SAP and so forth. So before a single byte of patient data arrives, we've spent many millions of dollars on hidden technologies to support our work with it. A closed shop.
+- Good luck Surya learning how to work with these systems in University. More likely she is learning on the job, subtracting her time to learn from the bottom line of her company and adding to the waiting time for a patient in need of the medicine.
+
+- so that's the bad and the ugly of clinical programming in 2024.
+
+-But I'm an optimist, and see the solutions all around us... namely from the software development industry. Because, you know, they write code to do useful, or at least valuable things for all of us, like letting me speak from the comfort of my home office to all of your selves, in real time!
+
+:::
+
+## Learn from the best
+
+### The software dev / tech industry<br />[[to-be]]{.yellow}
+
+<!-- ::: {.incremental} -->
+a. Version control: code *and data*
+b. [Agile development methods]{.yellow}: collaboration and iteration
+c. Openish source: democratize the tools and processes that we use to make money with, not from.
+  *SAS macros anyone?*
+<br />   
+    And make our data accessible to anyone who can add value:
+    data scientists, shareholders, regulators, at any-time, any-how. *Blockchain anyone?*
+<!-- ::: -->
+
+::: {.notes}
+- although mainstream software dev doesn't need to worry about audits from regulatory authorities, or harm coming to patients, there are some pretty obvious tools that clinical programming from day 1 of go live:
+
+- First: let's let the machines look after versioning our code. Yes, SVN or perhaps Git is in place in companies, but statistical programmers are typically not committing, branching and merging the code they write. SAS code is still written more like a word document on a university students PC, using directory and file names to indicate code history and maturity.
+- The same is true for data in my experience. What else would Surya expect from using files to store data. Even if we were insane we could get these 'files' into a git repo and improve the management of our data and clinical study progress to completion. I'm half joking, just snap-shotting any common relational database would provide large efficiency gains from process perspective. These products are available today, e.g. TerminusDB, Dolt and LakeFS look very interesting.
+
+- Agile development: this is a pet love of mine. Developers have been writing code since before most of us were born. It's a hard job, but after 50 years these clever people have worked out some pretty effective ways to generate the highes quality code with as little time and energy as possible.
+  - pair programming
+  - test driven development
+  - sprint cycles: iteration, iteration and more iteration!
+  - stand ups
+  - code reviews
+  - back log refinements
+  - story board estimates
+- it all works!
+- stat programming is really missing a lot merely not embracing current software dev best practices... *especially* given the pressures of the regulatory environment.
+
+And third is a mind-set shift around our main assets. Keeping our compound structures and synthesis processes secret and under patent should remain so. But the data we receive from our patients realizes new value in the 'data is the new oil' economy. <To Do>
+
+:::
+
+# II. Inflection<br /> [[pivot]]{.yellow}
+
+::: {.notes}
+- I've described to you the head-winds that drag at stat-programmer, Surya's efforts to deliver the documentation thgat initiates the communication with regulatory authorities. 
+- I've offered a first pass of the many things Pharma could have been using for more than a decade now.
+- And remind us it's not too late to start implementing one, some or all of these today.
+- So what's holding us back?
+:::
+
 ## Impediments to change
 
-     a. Incumbents: technologies, infrastructure resource investment
-     b. Mindset: agile, open source
-     c. Generation change
-     d. Existing, highly complex, SAS code base
-     e. Motivation
+<!-- ::: {.incremental} -->
+a. Incumbents: technologies, infrastructure resource investment
+b. Mindset: agile, open source
+c. Generation change
+d. Existing, highly complex, SAS code base
+e. Motivation
+<!-- ::: -->
+
+::: {.notes}
+- first are the incumbents and sunk cost they've incurred. Hundreds of millions have been invested over the last quarter century building and maintaining the SAS pipelines that Surya and her team use to create TLFs. The external companies and internal stake-holders that suppor this are incentivised to keep doing so.
+
+- Next is the industries legacy of being closed source. The silo everything mentality works against change and innovation. Whatever we do, we do typically alone because of teh atmospher of 'dont tell any one',
+
+- So miss the collective intelligence of developers exchangeing and building on great ideas to advance the field.
+
+
+:::
 
 ## What can and should we do today
 
-     a. Accept the as-is (work with what we've got), and commit to change (allocate time, money and people)
-     b. What we can and should we do today.
+::: columns
+::: {.column width="30%"}
+
+![](images/museums.jpg)
+<!-- {.absolute bottom=0 right=0} -->
+:::
+<!-- width="350" height="300"} -->
+
+::: {.column width="70%"}
+<!-- ::: {.incremental} -->
+a. Accept the as-is (work with what we've got), and commit to change (allocate time, money and people)
+b. What we can and should we do today.
+<!-- ::: -->
+:::
+:::
+
+::: {.notes}
+Speaker notes go here.
+:::
 
 # III. Building the Future: upgrade the engine while the car is driving
 
-## Get a handle on our data and code: overlay a semantic data model on existing data and code
+## Get a handle on our data and code: [over]{.yellow}lay a semantic data model on existing data and code
 
-     a. Data and code => it's all just ETL, so let's do it properly
-     b. Previous efforts to build an ontology, (top down from standards, have so far not delivered)
-        << consider to insert hand drawn summary here >>
-     c. Take a different approach (bottom up from code)
+<!-- ::: {.incremental} -->
+a. Data and code => it's all just ETL, so let's do it properly
+b. Previous efforts to build an ontology, (top down from standards, have so far not delivered)
+  << consider to insert hand drawn summary here >>
+c. Take a different approach (bottom up from code)
+<!-- ::: -->
 
-## Bottom up Knowledge Graphs: _under_pin a sematic data model on existing data and code
+::: {.notes}
+Speaker notes go here.
+:::
 
-     a. Not lost in translation: code is _the_ execution level, not documentatation and meta-data strandards, SAPs and so forth
-     b. Works with _all_ previous and current code
-     c. Machines can parse all the code
+## Bottom up *Knowledge Graphs*: [under]{.yellow}pin a sematic data model on existing data and code
+
+<!-- ::: {.incremental} -->
+a. Not lost in translation: code is _the_ execution level, not documentatation and meta-data strandards, SAPs and so forth
+b. Works with _all_ previous and current code
+c. Machines can parse all the code
+<!-- ::: -->
+
+::: {.notes}
+Speaker notes go here.
+:::
 
 ## Deterministically read machine parsed code
 
-     a. Fully automate the graph creation
-     b. 100% explainable, no halucinations
-     c. Universal code logic extraction
+<!-- ::: {.incremental} -->
+a. deterministic vs probablistic
+a. Fully automate the graph creation
+b. 100% explainable, no halucinations
+c. Universal code logic extraction
+<!-- ::: -->
+
+::: {.notes}
+Speaker notes go here.
+:::
 
 ## Single source of truth feeds other processes
 
-     a. Create Documentation (definitions and descriptions) for humans
-     b. Translate to other languages: R and Python (break out of the SAS trap)
-     c. end-to-end tracability with a complete dependancy map: breaking changes
+<!-- ::: {.incremental} -->
+a. Create Documentation (definitions and descriptions) for humans
+b. Translate to other languages: R and Python (break out of the SAS trap)
+c. end-to-end tracability with a complete dependancy map: breaking changes
+<!-- ::: -->
+
+::: {.notes}
+Speaker notes go here.
+:::
 
 ## But wait, won't LLMs deliver our golden future (and replace humans)?
 
-     a. In short no, becuase they are probabilistic and determinism is at the heart of drug development (esp back translation)
-     b. But they will be useful for support tasks
+<!-- ::: {.incremental} -->
+a. In short no, because they are probabilistic and determinism is at the heart of drug development (esp back translation)
+b. But they will be useful for support tasks
+<!-- ::: -->
+
+::: {.notes}
+Speaker notes go here.
+:::
 
 ## LLMs will accelerate human efforts (nothing new, but let's run through the existing list)
 
-     a. Draft text creation: e.g. CSR
-     b. Draft code documentatation
-     c. Draft code creation
-     e. Natural langauige intgerface to tabular and relational database stores
-     f. Synthetic data creation (to liberate clinical data from Silos)
+<!-- ::: {.incremental} -->
+a. Draft text creation: e.g. CSR
+b. Draft code documentation
+c. Draft code creation
+e. Natural language interface to tabular and relational database stores
+f. Synthetic data creation (to liberate clinical data from Silos)
+<!-- ::: -->
+
+::: {.notes}
+Speaker notes go here.
+:::
 
 ## Summary
 
 ## Acknowledgements (?)
+Tomas Sabat Stöfsel for opportunity, thoughts on communication and double programming
 
+::: {.notes}
+Speaker notes go here.
+:::
+
+## Notes
+
+::: {.notes}
+Follow up talk? Liekly only wetted your appetite, though hope there was enough to get you going.
+
+Deliverable: motivate to action:
+Motivate you and your team, your entire company to take action today:
+<br />
+*Go get after it!*
+
+Tamr - as next level ETL
+
+First mention of TLF: where shoudl it bne? Make it emphasized
+:::

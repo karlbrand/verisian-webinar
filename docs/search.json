@@ -4,84 +4,112 @@
     "href": "verisian-webinar.html#disclaimer",
     "title": "How Generative AI and Knowledge Graphs Will Transform Clinical Trial Programming",
     "section": "Disclaimer",
-    "text": "Disclaimer\n There are no contracts for payment, draft or otherwise between myself or my employer and Verisian.   The written and expressed views in this presentation are entirely those of the presenter; they are not intended to be representative in any way of my employer, Bayer Aktiengesellschaft."
+    "text": "Disclaimer\n Neither I nor my employer receive any payment or benefits from Verisian.   The written and expressed views in this presentation are entirely those of the presenter; they are not intended to be representative of my employer, Bayer Aktiengesellschaft.\n\n\nI’m not getting paid by Verisian nor am i incentivized in any way to promote their company or products.\nThis presentation is made by myself and on behalf of myself.\nOpinions are my own and not those of my employer, Bayer.\nJust on opinions - that’s all they are. I’m a scientist with a back ground in genomics and biomarkers.\nAnd though I’ved worked to ensure my opinions align with facts and other observations…\nIf you think I’m getting something wrong then please call me out in the Q&A for both my and the audiences benefit. - There’s a lot I’m still learning after 7 years or so in the industry."
+  },
+  {
+    "objectID": "verisian-webinar.html#contents",
+    "href": "verisian-webinar.html#contents",
+    "title": "How Generative AI and Knowledge Graphs Will Transform Clinical Trial Programming",
+    "section": "Contents",
+    "text": "Contents\n\nIntroduction\nInflection [pivot]\nBuilding the Future: upgrade the engine while the car is driving\n\n\n\nstructure of what I’ll take us through over the next 30mins"
   },
   {
     "objectID": "verisian-webinar.html#why-are-we-here",
     "href": "verisian-webinar.html#why-are-we-here",
     "title": "How Generative AI and Knowledge Graphs Will Transform Clinical Trial Programming",
-    "section": "Why are we here",
-    "text": "Why are we here\n To communicate our quantitative measures of therapy safety and efficacy in patients to third parties for evaluation of health value.\n\n  To change for the better how we do this.\n\nSpeaker notes go here."
+    "section": "Why are we here?",
+    "text": "Why are we here?\n To communicate our quantitative measures of therapy safety and efficacy in patients to third parties for evaluation of health value.\n\n  To change for the better how we do this.\n\n\nI want to take a few moments to linger on the ‘why’ of why I’m asking you for 30mins of your time today.\nI’ll be talking around the topic of statistical programming processes today.\nBut it’s important to remember what the whole drug-development endeavour is about:\n\nmaking medicine that helps people, and…\nbeing able to communicate to those charged with safeguarding peoples health and well being, the facts and many details about how effectively our medicines work and so forth\n\nAnd! To see how we can change this process for the better, or improve it.\nThe deliverable of this persentation is to convince you there is a better way to get statisitcal programming done, and,\nto motivate you and your team, your entire company, to take action today!"
   },
   {
-    "objectID": "verisian-webinar.html#as-is-legacy-processes-2024-or-1994",
-    "href": "verisian-webinar.html#as-is-legacy-processes-2024-or-1994",
+    "objectID": "verisian-webinar.html#this-is-personal",
+    "href": "verisian-webinar.html#this-is-personal",
     "title": "How Generative AI and Knowledge Graphs Will Transform Clinical Trial Programming",
-    "section": "As-Is (Legacy Processes: 2024 or 1994?)",
-    "text": "As-Is (Legacy Processes: 2024 or 1994?)\n\n\nData Storage\nData Transformation\nProcesses: the solo programmer & double programming\nChallenges unique to the Domain (data privacy), Silo everything: Data and code and tools are closed source"
+    "section": "This is personal",
+    "text": "This is personal\n Statistical Programming Analyst: \n\n\nSurya [SAS ninja]\n\n\n\n\n\nImage credit: https://easy-peasy.ai/\n\n\n\nTo Do"
   },
   {
-    "objectID": "verisian-webinar.html#to-be-learn-from-the-best-that-is-the-software-development-industry",
-    "href": "verisian-webinar.html#to-be-learn-from-the-best-that-is-the-software-development-industry",
+    "objectID": "verisian-webinar.html#this-is-personal-1",
+    "href": "verisian-webinar.html#this-is-personal-1",
     "title": "How Generative AI and Knowledge Graphs Will Transform Clinical Trial Programming",
-    "section": "To-Be (learn from the best, that is the software development industry)",
-    "text": "To-Be (learn from the best, that is the software development industry)\n\nVersion Control: the data and the code\nAgile development: collaboration, iteration, open-ish source (democratize the (mostly open source) tools and processes)\nMake it all accessible to any-one (data scientist, shareholder, regulator), any-time, any-how"
+    "section": "This is personal",
+    "text": "This is personal\n Statistical Programming Analyst: \n\n\nSurya [SAS ninja]\nWorks with a mountain of SAS code…\n\n\n\n\n\nImage was created with the assistance of DALL·E 2\n\n\n\nTo Do"
+  },
+  {
+    "objectID": "verisian-webinar.html#this-is-personal-2",
+    "href": "verisian-webinar.html#this-is-personal-2",
+    "title": "How Generative AI and Knowledge Graphs Will Transform Clinical Trial Programming",
+    "section": "This is personal",
+    "text": "This is personal\n Statistical Programming Analyst: \n\n\nSurya [SAS ninja]\nWorks with a mountain of SAS code…\nTo deliver a Clinical Study Report\n\n\n\n\n\nImage was created with the assistance of DALL·E 2\n\n\n\nTo Do"
+  },
+  {
+    "objectID": "verisian-webinar.html#suryas-challenges-in-2024",
+    "href": "verisian-webinar.html#suryas-challenges-in-2024",
+    "title": "How Generative AI and Knowledge Graphs Will Transform Clinical Trial Programming",
+    "section": "Surya’s Challenges in 2024",
+    "text": "Surya’s Challenges in 2024\nLegacy Processes: 2024 or 1994? [as-is]\n\n\nData Storage\nData Transformation\nProcesses: the solo programmer & double programming\nSilo everything: challenges unique to the Domain (data privacy):  Data and code and tools are closed source  \n\n\n\nFirst: there is the data. This typically arrives at Surya’s teams desks as flat-files of tables locked up in a proprietary file format like sas7bdat archive files. And not just one file, but many. And not with unique feature or variable sets but with redundancy. And with a set of variables or ‘data models’ which differ between studies and over time.\nCountless hours have been invested to create standards to ease interoperability across studies, teams companies and so forth: CDISC Analysis Data Model (CDISC - ADaM) and Study Data Tabulation Model (CDISC - STDM)\nWhere are these files stored? Probably on a network file share. In a mostly, but entirely, standardised (but arcane) folder hierarchy. Invented by a sys-admin who knows linux, but not UX.\nSurya will need some days, or weeks, to familiarize her self with the mere structure of the study data.\nSecond: there is what we do to the data. Surya transforms some variables from one format to another according to a set of specifications another team drafted. This may be units of measurement, different international standards for certain data types like dates, and so forth. In computer science this might be akin to the ‘T’ for ‘transformation’ in the ETL process. Some excellent software developed for ETL applications. But manual writing and maintenance of SAS code is not one them!\nSurya will toil for some days or weeks on the code that manages the transformation of the clinical trial data her team is supporting.\nThird: Surya will deal with the first two challenges alone. That is, navigating the study files on the network drive, the countless SAS programs and macros already written, and of course writing what ever changes, updates or new SAS programs are defined in the documentation for this specific study, like the Statistical Analysis Plan or SAP.\nOn top of doing this alone, a second human will re-write, from scratch much or all of the code Surya wrote to create the tables, listings and figures for the CSR. If both programmers code produce the same out-put it means that they either both did it correctly, or they both made the same mistake. Fair enough, it’s almost always the correct out come. But it’s a lot of energy with no gain beyond a consensus is programming.\nFourth and last in my misery-list are challenges unique to the domain of itself. Namely data privacy owing to the source of the data: us. These are measurements about our most intimate selves. I’m a pretty person but even I’m not comfortable advertising certain measurements of my body. No doubt your the same. This means a LOT of resources are invested to ensure clinical data is held under strictly enforced access controls.\nStewart Brand (no relation) was quoted: “Information wants to be free”. It seams he was not referring to clinical data.\nIn contrast to the virtues of the open-source movement which has delivered much of the tooling needed to build, arguable, humanities greatest achievement to date - the internet - the justifiable siloing of clinical data has seeded the approach I think, that everything around it should also be carefully guarded and locked away: the code we write to do the data processing, the langauge we use to write the code (still mostly SAS), the systems we use, Oracle, SAP and so forth. So before a single byte of patient data arrives, we’ve spent many millions of dollars on hidden technologies to support our work with it. A closed shop.\nGood luck Surya learning how to work with these systems in University. More likely she is learning on the job, subtracting her time to learn from the bottom line of her company and adding to the waiting time for a patient in need of the medicine.\nso that’s the bad and the ugly of clinical programming in 2024.\n\n-But I’m an optimist, and see the solutions all around us… namely from the software development industry. Because, you know, they write code to do useful, or at least valuable things for all of us, like letting me speak from the comfort of my home office to all of your selves, in real time!"
+  },
+  {
+    "objectID": "verisian-webinar.html#learn-from-the-best",
+    "href": "verisian-webinar.html#learn-from-the-best",
+    "title": "How Generative AI and Knowledge Graphs Will Transform Clinical Trial Programming",
+    "section": "Learn from the best",
+    "text": "Learn from the best\nThe software dev / tech industry[to-be]\n\n\nVersion control: code and data\nAgile development methods: collaboration and iteration\nOpenish source: democratize the tools and processes that we use to make money with, not from. SAS macros anyone? \nAnd make our data accessible to anyone who can add value: data scientists, shareholders, regulators, at any-time, any-how. Blockchain anyone? \n\n\n\nalthough mainstream software dev doesn’t need to worry about audits from regulatory authorities, or harm coming to patients, there are some pretty obvious tools that clinical programming from day 1 of go live:\nFirst: let’s let the machines look after versioning our code. Yes, SVN or perhaps Git is in place in companies, but statistical programmers are typically not committing, branching and merging the code they write. SAS code is still written more like a word document on a university students PC, using directory and file names to indicate code history and maturity.\nThe same is true for data in my experience. What else would Surya expect from using files to store data. Even if we were insane we could get these ‘files’ into a git repo and improve the management of our data and clinical study progress to completion. I’m half joking, just snap-shotting any common relational database would provide large efficiency gains from process perspective. These products are available today, e.g. TerminusDB, Dolt and LakeFS look very interesting.\nAgile development: this is a pet love of mine. Developers have been writing code since before most of us were born. It’s a hard job, but after 50 years these clever people have worked out some pretty effective ways to generate the highes quality code with as little time and energy as possible.\n\npair programming\ntest driven development\nsprint cycles: iteration, iteration and more iteration!\nstand ups\ncode reviews\nback log refinements\nstory board estimates\n\nit all works!\nstat programming is really missing a lot merely not embracing current software dev best practices… especially given the pressures of the regulatory environment.\n\nAnd third is a mind-set shift around our main assets. Keeping our compound structures and synthesis processes secret and under patent should remain so. But the data we receive from our patients realizes new value in the ‘data is the new oil’ economy."
   },
   {
     "objectID": "verisian-webinar.html#impediments-to-change",
     "href": "verisian-webinar.html#impediments-to-change",
     "title": "How Generative AI and Knowledge Graphs Will Transform Clinical Trial Programming",
     "section": "Impediments to change",
-    "text": "Impediments to change\n a. Incumbents: technologies, infrastructure resource investment\n b. Mindset: agile, open source\n c. Generation change\n d. Existing, highly complex, SAS code base\n e. Motivation"
+    "text": "Impediments to change\n\n\nIncumbents: technologies, infrastructure resource investment\nMindset: agile, open source\nGeneration change\nExisting, highly complex, SAS code base\nMotivation \n\n\n\nfirst are the incumbents and sunk cost they’ve incurred. Hundreds of millions have been invested over the last quarter century or so building and maintaining the SAS pipelines that Surya and her team use to creat"
   },
   {
     "objectID": "verisian-webinar.html#what-can-and-should-we-do-today",
     "href": "verisian-webinar.html#what-can-and-should-we-do-today",
     "title": "How Generative AI and Knowledge Graphs Will Transform Clinical Trial Programming",
     "section": "What can and should we do today",
-    "text": "What can and should we do today\n a. Accept the as-is (work with what we've got), and commit to change (allocate time, money and people)\n b. What we can and should we do today."
+    "text": "What can and should we do today\n\n\n \n\n\n\nAccept the as-is (work with what we’ve got), and commit to change (allocate time, money and people)\nWhat we can and should we do today. \n\n\n\n\nSpeaker notes go here."
   },
   {
     "objectID": "verisian-webinar.html#get-a-handle-on-our-data-and-code-overlay-a-semantic-data-model-on-existing-data-and-code",
     "href": "verisian-webinar.html#get-a-handle-on-our-data-and-code-overlay-a-semantic-data-model-on-existing-data-and-code",
     "title": "How Generative AI and Knowledge Graphs Will Transform Clinical Trial Programming",
     "section": "Get a handle on our data and code: overlay a semantic data model on existing data and code",
-    "text": "Get a handle on our data and code: overlay a semantic data model on existing data and code\n a. Data and code =&gt; it's all just ETL, so let's do it properly\n b. Previous efforts to build an ontology, (top down from standards, have so far not delivered)\n    &lt;&lt; consider to insert hand drawn summary here &gt;&gt;\n c. Take a different approach (bottom up from code)"
+    "text": "Get a handle on our data and code: overlay a semantic data model on existing data and code\n\n\nData and code =&gt; it’s all just ETL, so let’s do it properly\nPrevious efforts to build an ontology, (top down from standards, have so far not delivered) &lt;&lt; consider to insert hand drawn summary here &gt;&gt;\nTake a different approach (bottom up from code) \n\n\nSpeaker notes go here."
   },
   {
-    "objectID": "verisian-webinar.html#bottom-up-knowledge-graphs-_under_pin-a-sematic-data-model-on-existing-data-and-code",
-    "href": "verisian-webinar.html#bottom-up-knowledge-graphs-_under_pin-a-sematic-data-model-on-existing-data-and-code",
+    "objectID": "verisian-webinar.html#bottom-up-knowledge-graphs-underpin-a-sematic-data-model-on-existing-data-and-code",
+    "href": "verisian-webinar.html#bottom-up-knowledge-graphs-underpin-a-sematic-data-model-on-existing-data-and-code",
     "title": "How Generative AI and Knowledge Graphs Will Transform Clinical Trial Programming",
-    "section": "Bottom up Knowledge Graphs: _under_pin a sematic data model on existing data and code",
-    "text": "Bottom up Knowledge Graphs: _under_pin a sematic data model on existing data and code\n a. Not lost in translation: code is _the_ execution level, not documentatation and meta-data strandards, SAPs and so forth\n b. Works with _all_ previous and current code\n c. Machines can parse all the code"
+    "section": "Bottom up Knowledge Graphs: underpin a sematic data model on existing data and code",
+    "text": "Bottom up Knowledge Graphs: underpin a sematic data model on existing data and code\n\n\nNot lost in translation: code is the execution level, not documentatation and meta-data strandards, SAPs and so forth\nWorks with all previous and current code\nMachines can parse all the code \n\n\nSpeaker notes go here."
   },
   {
     "objectID": "verisian-webinar.html#deterministically-read-machine-parsed-code",
     "href": "verisian-webinar.html#deterministically-read-machine-parsed-code",
     "title": "How Generative AI and Knowledge Graphs Will Transform Clinical Trial Programming",
     "section": "Deterministically read machine parsed code",
-    "text": "Deterministically read machine parsed code\n a. Fully automate the graph creation\n b. 100% explainable, no halucinations\n c. Universal code logic extraction"
+    "text": "Deterministically read machine parsed code\n\n\ndeterministic vs probablistic\nFully automate the graph creation\n100% explainable, no halucinations\nUniversal code logic extraction \n\n\nSpeaker notes go here."
   },
   {
     "objectID": "verisian-webinar.html#single-source-of-truth-feeds-other-processes",
     "href": "verisian-webinar.html#single-source-of-truth-feeds-other-processes",
     "title": "How Generative AI and Knowledge Graphs Will Transform Clinical Trial Programming",
     "section": "Single source of truth feeds other processes",
-    "text": "Single source of truth feeds other processes\n a. Create Documentation (definitions and descriptions) for humans\n b. Translate to other languages: R and Python (break out of the SAS trap)\n c. end-to-end tracability with a complete dependancy map: breaking changes"
+    "text": "Single source of truth feeds other processes\n\n\nCreate Documentation (definitions and descriptions) for humans\nTranslate to other languages: R and Python (break out of the SAS trap)\nend-to-end tracability with a complete dependancy map: breaking changes \n\n\nSpeaker notes go here."
   },
   {
     "objectID": "verisian-webinar.html#but-wait-wont-llms-deliver-our-golden-future-and-replace-humans",
     "href": "verisian-webinar.html#but-wait-wont-llms-deliver-our-golden-future-and-replace-humans",
     "title": "How Generative AI and Knowledge Graphs Will Transform Clinical Trial Programming",
     "section": "But wait, won’t LLMs deliver our golden future (and replace humans)?",
-    "text": "But wait, won’t LLMs deliver our golden future (and replace humans)?\n a. In short no, becuase they are probabilistic and determinism is at the heart of drug development (esp back translation)\n b. But they will be useful for support tasks"
+    "text": "But wait, won’t LLMs deliver our golden future (and replace humans)?\n\n\nIn short no, because they are probabilistic and determinism is at the heart of drug development (esp back translation)\nBut they will be useful for support tasks \n\n\nSpeaker notes go here."
   },
   {
     "objectID": "verisian-webinar.html#llms-will-accelerate-human-efforts-nothing-new-but-lets-run-through-the-existing-list",
     "href": "verisian-webinar.html#llms-will-accelerate-human-efforts-nothing-new-but-lets-run-through-the-existing-list",
     "title": "How Generative AI and Knowledge Graphs Will Transform Clinical Trial Programming",
     "section": "LLMs will accelerate human efforts (nothing new, but let’s run through the existing list)",
-    "text": "LLMs will accelerate human efforts (nothing new, but let’s run through the existing list)\n a. Draft text creation: e.g. CSR\n b. Draft code documentatation\n c. Draft code creation\n e. Natural langauige intgerface to tabular and relational database stores\n f. Synthetic data creation (to liberate clinical data from Silos)"
+    "text": "LLMs will accelerate human efforts (nothing new, but let’s run through the existing list)\n\n\nDraft text creation: e.g. CSR\nDraft code documentation\nDraft code creation\nNatural language interface to tabular and relational database stores\nSynthetic data creation (to liberate clinical data from Silos) \n\n\nSpeaker notes go here."
   },
   {
     "objectID": "verisian-webinar.html#summary",
@@ -95,6 +123,13 @@
     "href": "verisian-webinar.html#acknowledgements",
     "title": "How Generative AI and Knowledge Graphs Will Transform Clinical Trial Programming",
     "section": "Acknowledgements (?)",
-    "text": "Acknowledgements (?)\n\n\n\nhttps://github.com/karlbrand/verisian-webinar"
+    "text": "Acknowledgements (?)\nTomas Sabat Stöfsel for opportunity, thoughts on communication and double programming\n\nSpeaker notes go here."
+  },
+  {
+    "objectID": "verisian-webinar.html#notes",
+    "href": "verisian-webinar.html#notes",
+    "title": "How Generative AI and Knowledge Graphs Will Transform Clinical Trial Programming",
+    "section": "Notes",
+    "text": "Notes\n\nFollow up talk? Liekly only wetted your appetite, though hope there was enough to get you going.\nDeliverable: motivate to action: Motivate you and your team, your entire company to take action today:  Go get after it!\nTamr - as next level ETL\nFirst mention of TLF: where shoudl it bne? Make it emphasized\n\n\n\n\nhttps://github.com/karlbrand/verisian-webinar"
   }
 ]
