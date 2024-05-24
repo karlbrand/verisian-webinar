@@ -399,12 +399,15 @@ Not only faster, there's more...
 
 ## Bottom up *Knowledge Graphs*: [under]{.yellow}pin a sematic data model on existing data and code
 
-a. Not lost in translation: [code is _the_&nbsp;&nbsp;business execution]{.yellow} that delivers value, not documentation and meta-data standards, SAPs and so forth
+a. Not lost in translation: [code is _the_&nbsp;&nbsp;business execution]{.yellow} that delivers value (not the so much the other stuff)
 b. Works with _all_&nbsp;&nbsp;previous and current code
 c. Machines parse the code and deterministically extract all process logic
 
 ::: {.notes}
-Speaker notes go here.
+- point a.: The executed code is what is creating the business deliverable: the TLF's that Surya is creating as teh key to bringing  adrug to markjet.
+- Much less so the documentation and meta-data standards, SAPs and so forth, which should be based on the code anyway (and mayb not the other way round)
+- point b.
+- point c. segue to next slide
 :::
 
 ## Deterministically read machine parsed code
@@ -417,17 +420,35 @@ c. Universal code logic extraction
 <!-- ::: -->
 
 ::: {.notes}
-Speaker notes go here.
+- For deterministic models, the output of the model is fully determined by the input parameters and data, whereas probabilistic models incorporate randomness in their approach. Consequently, the same set of parameter values and initial conditions can and will lead to different outputs, even as the input remains unchanged.
+- Another way to think of it is black box vs clear box.
+- So we can be *traceable* sure of what's going on using this approach.
+- This is *not* the case using LLM's
+- So you already know where LLM's probably (or absolutely) should not be used
+
+- b. Obviously, When a machine is doing, we can immedaitely begin to automate. Versus the army of human ontology specialists we'll need for the top down approach.
+
+- c. related to a. and what i mentioned before: where talking fully explainable processes.
+- ie. clear box, not black box.
+
+- d. You know exactly what you code is doing, which then feeds... segue...
 :::
 
 ## Single source of truth feeds other processes
 
-a. Create Documentation (definitions and descriptions) for humans
-b. Translate to other languages: R and Python (break out of the SAS trap)
-c. end-to-end tracability with a complete dependancy map: breaking changes
+a. Documentation creation: definitions and descriptions for [humans]{.yellow}
+b. Translate to other languages: R, Python <br />break out of the SAS *minima* :wave:
+c. Breaking changes: [end-to-end tracability]{.yellow} with a complete dependency map 
 
 ::: {.notes}
-Speaker notes go here.
+- With precise code logic comes autmomated documentation creation.
+- And with LLMs, which don't need to be determinsitally perfect when it comes ot grammar, they now come into the picture.
+
+- point b.: something use 'R' s and Pythonistas like myself will like: using the code logic to aumotically port the SAS code to R, python and pretty much any open source language!
+- shhh: don't tell your SAS contract manager. Seriously, where not trying to replacce SAS, but if you wanted too, this would make it so much easier!
+
+- point c. we bascially covered
+- won't Surya be happy she doesnt have to dig through 10 year old code from a colleague who left 9 years ago and wasn't very generous in commentin ghis code!
 :::
 
 ## But wait, won't LLMs deliver our golden future (and replace humans)?

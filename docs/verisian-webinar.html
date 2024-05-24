@@ -837,12 +837,17 @@ And make our data accessible to anyone who can add value: data scientists, share
 <section id="bottom-up-knowledge-graphs-underpin-a-sematic-data-model-on-existing-data-and-code" class="slide level2">
 <h2>Bottom up <em>Knowledge Graphs</em>: <span class="yellow">under</span>pin a sematic data model on existing data and code</h2>
 <ol type="a">
-<li>Not lost in translation: <span class="yellow">code is <em>the</em>&nbsp;&nbsp;business execution</span> that delivers value, not documentation and meta-data standards, SAPs and so forth</li>
+<li>Not lost in translation: <span class="yellow">code is <em>the</em>&nbsp;&nbsp;business execution</span> that delivers value (not the so much the other stuff)</li>
 <li>Works with <em>all</em>&nbsp;&nbsp;previous and current code</li>
 <li>Machines parse the code and deterministically extract all process logic</li>
 </ol>
 <aside class="notes">
-<p>Speaker notes go here.</p>
+<ul>
+<li>point a.: The executed code is what is creating the business deliverable: the TLF’s that Surya is creating as teh key to bringing adrug to markjet.</li>
+<li>Much less so the documentation and meta-data standards, SAPs and so forth, which should be based on the code anyway (and mayb not the other way round)</li>
+<li>point b.</li>
+<li>point c.&nbsp;segue to next slide</li>
+</ul>
 <style type="text/css">
         span.MJX_Assistive_MathML {
           position:absolute!important;
@@ -865,7 +870,23 @@ And make our data accessible to anyone who can add value: data scientists, share
 <li>Universal code logic extraction <!-- ::: --></li>
 </ol>
 <aside class="notes">
-<p>Speaker notes go here.</p>
+<ul>
+<li><p>For deterministic models, the output of the model is fully determined by the input parameters and data, whereas probabilistic models incorporate randomness in their approach. Consequently, the same set of parameter values and initial conditions can and will lead to different outputs, even as the input remains unchanged.</p></li>
+<li><p>Another way to think of it is black box vs clear box.</p></li>
+<li><p>So we can be <em>traceable</em> sure of what’s going on using this approach.</p></li>
+<li><p>This is <em>not</em> the case using LLM’s</p></li>
+<li><p>So you already know where LLM’s probably (or absolutely) should not be used</p></li>
+<li><ol start="2" type="a">
+<li>Obviously, When a machine is doing, we can immedaitely begin to automate. Versus the army of human ontology specialists we’ll need for the top down approach.</li>
+</ol></li>
+<li><ol start="3" type="a">
+<li>related to a. and what i mentioned before: where talking fully explainable processes.</li>
+</ol></li>
+<li><p>ie. clear box, not black box.</p></li>
+<li><ol start="4" type="a">
+<li>You know exactly what you code is doing, which then feeds… segue…</li>
+</ol></li>
+</ul>
 <style type="text/css">
         span.MJX_Assistive_MathML {
           position:absolute!important;
@@ -881,12 +902,19 @@ And make our data accessible to anyone who can add value: data scientists, share
 <section id="single-source-of-truth-feeds-other-processes" class="slide level2">
 <h2>Single source of truth feeds other processes</h2>
 <ol type="a">
-<li>Create Documentation (definitions and descriptions) for humans</li>
-<li>Translate to other languages: R and Python (break out of the SAS trap)</li>
-<li>end-to-end tracability with a complete dependancy map: breaking changes</li>
+<li>Documentation creation: definitions and descriptions for <span class="yellow">humans</span></li>
+<li>Translate to other languages: R, Python <br>break out of the SAS <em>minima</em> <span class="emoji" data-emoji="wave">👋</span></li>
+<li>Breaking changes: <span class="yellow">end-to-end tracability</span> with a complete dependency map</li>
 </ol>
 <aside class="notes">
-<p>Speaker notes go here.</p>
+<ul>
+<li><p>With precise code logic comes autmomated documentation creation.</p></li>
+<li><p>And with LLMs, which don’t need to be determinsitally perfect when it comes ot grammar, they now come into the picture.</p></li>
+<li><p>point b.: something use ‘R’ s and Pythonistas like myself will like: using the code logic to aumotically port the SAS code to R, python and pretty much any open source language!</p></li>
+<li><p>shhh: don’t tell your SAS contract manager. Seriously, where not trying to replacce SAS, but if you wanted too, this would make it so much easier!</p></li>
+<li><p>point c.&nbsp;we bascially covered</p></li>
+<li><p>won’t Surya be happy she doesnt have to dig through 10 year old code from a colleague who left 9 years ago and wasn’t very generous in commentin ghis code!</p></li>
+</ul>
 <style type="text/css">
         span.MJX_Assistive_MathML {
           position:absolute!important;

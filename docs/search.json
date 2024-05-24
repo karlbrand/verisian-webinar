@@ -109,21 +109,21 @@
     "href": "verisian-webinar.html#bottom-up-knowledge-graphs-underpin-a-sematic-data-model-on-existing-data-and-code",
     "title": "How Generative AI and Knowledge Graphs Will Transform Clinical Trial Programming",
     "section": "Bottom up Knowledge Graphs: underpin a sematic data model on existing data and code",
-    "text": "Bottom up Knowledge Graphs: underpin a sematic data model on existing data and code\n\nNot lost in translation: code is the  business execution that delivers value, not documentation and meta-data standards, SAPs and so forth\nWorks with all  previous and current code\nMachines parse the code and deterministically extract all process logic\n\n\nSpeaker notes go here."
+    "text": "Bottom up Knowledge Graphs: underpin a sematic data model on existing data and code\n\nNot lost in translation: code is the  business execution that delivers value (not the so much the other stuff)\nWorks with all  previous and current code\nMachines parse the code and deterministically extract all process logic\n\n\n\npoint a.: The executed code is what is creating the business deliverable: the TLF’s that Surya is creating as teh key to bringing adrug to markjet.\nMuch less so the documentation and meta-data standards, SAPs and so forth, which should be based on the code anyway (and mayb not the other way round)\npoint b.\npoint c. segue to next slide"
   },
   {
     "objectID": "verisian-webinar.html#deterministically-read-machine-parsed-code",
     "href": "verisian-webinar.html#deterministically-read-machine-parsed-code",
     "title": "How Generative AI and Knowledge Graphs Will Transform Clinical Trial Programming",
     "section": "Deterministically read machine parsed code",
-    "text": "Deterministically read machine parsed code\n\n\ndeterministic vs probablistic\nFully automate the graph creation\n100% explainable, no halucinations\nUniversal code logic extraction \n\n\nSpeaker notes go here."
+    "text": "Deterministically read machine parsed code\n\n\ndeterministic vs probablistic\nFully automate the graph creation\n100% explainable, no halucinations\nUniversal code logic extraction \n\n\n\nFor deterministic models, the output of the model is fully determined by the input parameters and data, whereas probabilistic models incorporate randomness in their approach. Consequently, the same set of parameter values and initial conditions can and will lead to different outputs, even as the input remains unchanged.\nAnother way to think of it is black box vs clear box.\nSo we can be traceable sure of what’s going on using this approach.\nThis is not the case using LLM’s\nSo you already know where LLM’s probably (or absolutely) should not be used\n\nObviously, When a machine is doing, we can immedaitely begin to automate. Versus the army of human ontology specialists we’ll need for the top down approach.\n\n\nrelated to a. and what i mentioned before: where talking fully explainable processes.\n\nie. clear box, not black box.\n\nYou know exactly what you code is doing, which then feeds… segue…"
   },
   {
     "objectID": "verisian-webinar.html#single-source-of-truth-feeds-other-processes",
     "href": "verisian-webinar.html#single-source-of-truth-feeds-other-processes",
     "title": "How Generative AI and Knowledge Graphs Will Transform Clinical Trial Programming",
     "section": "Single source of truth feeds other processes",
-    "text": "Single source of truth feeds other processes\n\nCreate Documentation (definitions and descriptions) for humans\nTranslate to other languages: R and Python (break out of the SAS trap)\nend-to-end tracability with a complete dependancy map: breaking changes\n\n\nSpeaker notes go here."
+    "text": "Single source of truth feeds other processes\n\nDocumentation creation: definitions and descriptions for humans\nTranslate to other languages: R, Python break out of the SAS minima 👋\nBreaking changes: end-to-end tracability with a complete dependency map\n\n\n\nWith precise code logic comes autmomated documentation creation.\nAnd with LLMs, which don’t need to be determinsitally perfect when it comes ot grammar, they now come into the picture.\npoint b.: something use ‘R’ s and Pythonistas like myself will like: using the code logic to aumotically port the SAS code to R, python and pretty much any open source language!\nshhh: don’t tell your SAS contract manager. Seriously, where not trying to replacce SAS, but if you wanted too, this would make it so much easier!\npoint c. we bascially covered\nwon’t Surya be happy she doesnt have to dig through 10 year old code from a colleague who left 9 years ago and wasn’t very generous in commentin ghis code!"
   },
   {
     "objectID": "verisian-webinar.html#but-wait-wont-llms-deliver-our-golden-future-and-replace-humans",
