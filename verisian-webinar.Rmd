@@ -43,10 +43,12 @@ The written and expressed views in this presentation are entirely those of the p
 :::
 
 ## Contents
+<br />
+<br />
 
-I.   Introduction
-II.  Inflection [[pivot]]{.yellow}
-III. Building the Future: upgrade the engine while the car is driving
+### I.   Introduction
+### II.  Inflection [[pivot]]{.yellow}
+### III. Building the Future: upgrade the engine while the car is driving
 
 ::: {.notes}
 - structure of what I'll take us through over the next 30mins
@@ -162,7 +164,6 @@ Image was created with the assistance of DALL·E 2
 
 ### Legacy Processes: 2024 or 1994? [[as-is]]{.yellow}
 
-<!-- ::: {.incremental} -->
 a. Data Storage
 b. Data Transformation
 c. Processes: the solo programmer & double programming
@@ -170,7 +171,6 @@ d. Silo everything: challenges unique to the Domain (data privacy):
 <br />
    Data and code and tools are closed source
 <!-- :wave: -->
-<!-- ::: -->
 
 ::: {.notes}
 - First: there is the data. This typically arrives at Surya's teams desks as flat-files of tables locked up in a proprietary file format like sas7bdat archive files. And not just one file, but many. And not with unique feature or variable sets but with redundancy. And with a set of variables or 'data models' which differ between studies and over time.
@@ -199,7 +199,6 @@ d. Silo everything: challenges unique to the Domain (data privacy):
 
 ### The software dev / tech industry<br />[[to-be]]{.yellow}
 
-<!-- ::: {.incremental} -->
 a. Version control: code *and data*
 b. [Agile development methods]{.yellow}: collaboration and iteration
 c. Openish source: democratize the tools and processes that we use to make money with, not from.
@@ -207,7 +206,6 @@ c. Openish source: democratize the tools and processes that we use to make money
 <br />   
     And make our data accessible to anyone who can add value:
     data scientists, shareholders, regulators, at any-time, any-how. *Blockchain anyone?*
-<!-- ::: -->
 
 ::: {.notes}
 - although mainstream software dev doesn't need to worry about audits from regulatory authorities, or harm coming to patients, there are some pretty obvious tools that clinical programming from day 1 of go live:
@@ -242,67 +240,168 @@ And third is a mind-set shift around our main assets. Keeping our compound struc
 ## Impediments to change
 
 <!-- ::: {.incremental} -->
-a. Incumbents: technologies, infrastructure resource investment
-b. Mindset: agile, open source
+a. Incumbents: legacy technologies and infrastructure 
+b. Mindset: lethargic and closed [source]
 c. Generation change
-d. Existing, highly complex, SAS code base
+d. Existant SAS code: [highly complex]{.yellow}
 e. Motivation
+<br />
+<br />
+  *"Change happens when the pain of staying the same is greater than the pain of change"* &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;-Tony Robbins
+
 <!-- ::: -->
 
 ::: {.notes}
-- first are the incumbents and sunk cost they've incurred. Hundreds of millions have been invested over the last quarter century building and maintaining the SAS pipelines that Surya and her team use to create TLFs. The external companies and internal stake-holders that suppor this are incentivised to keep doing so.
+- So before we lean into the change, here some points to mindful about where might find resistance.
 
-- Next is the industries legacy of being closed source. The silo everything mentality works against change and innovation. Whatever we do, we do typically alone because of teh atmospher of 'dont tell any one',
+- first are the incumbents and the sunk cost they've incurred. Over the last quarter century or so hundreds of millions have been plouged into building and maintaining the SAS pipelines that Surya and her team use to create TLFs. The external companies and internal stake-holders that support this are incentivised to keep doing so. They want to keep doing what they know how to do. Learning new tricks get's harder the longer you keep doing the same thing. 
 
-- So miss the collective intelligence of developers exchangeing and building on great ideas to advance the field.
+- Next is the industries legacy of being closed source. The silo everything mentality works against change and innovation. Whatever we do, we typically do alone because of the pervading atmosphere of 'don't tell any one'.
+- So except for cross industry organisations like PHUSE and CDISC we largely miss the collective intelligence of developers exchanging and building on great ideas to advance the field.
+- Lethargy pervades teams: get the work done, don't create more by trying to innovate.
 
+- So unlike other less profitable industries we see a rate of change yet matching our species: only the younger generation, with newer experiences and views on the world who are given the opportunity to lead will make the changes required for improvement.
+- The reality is that managers in large companies with high salaries and benefits are incentivised to stay in place and not try to fix what isn't broken.
 
+- The fourth point is a doozy: the sheer volume and interdependent architecture of a typical phase 2 or 3 study is something to behold. If you could behold it. Because as of today there is no tool available you can point to a study code base which will describe, in total, the dependency tree, or map of every single clinical variable or feature.
+- Macros nested within macros nested within macros, tables inner joined, outer joined, left and right joined from multiple files containers.
+- Is it any wonder stat programming pays as well as it does to have a human understand this?
+
+- <To Do> Note that I said 'until today'. We'll come back to this.
+
+- Last point, let's be honest: energy is only spent when the motivation is sufficient.
 :::
 
-## What can and should we do today
+## What can and should we do today?
 
 ::: columns
 ::: {.column width="30%"}
 
 ![](images/museums.jpg)
-<!-- {.absolute bottom=0 right=0} -->
 :::
-<!-- width="350" height="300"} -->
 
 ::: {.column width="70%"}
-<!-- ::: {.incremental} -->
-a. Accept the as-is (work with what we've got), and commit to change (allocate time, money and people)
-b. What we can and should we do today.
-<!-- ::: -->
+Accept the [as-is]{.yellow}:
+<br />
+a. Work with what we've got 
+  <br />
+b. Commit what's need to change, i.e.
+  <br />
+  time, money and people.
+  <br />
+  <br />
+*Objective judgement, now, at this very moment. Unselfish action, now, at this very moment. Willing [acceptance]{.yellow} - now, at this very moment - of all external events. That's all you need.* &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;-Marcus Aurelius 
 :::
 :::
 
 ::: {.notes}
-Speaker notes go here.
+- I would have thought these two points are obvious.
+- But from those making the decisions with access to the big budgets, I'm not seeing the evidence that these 2000 year old points have been grasped...
+
+- Now, lets what do I propose we can and should we do today to narrow the gap between the as-is and to-be.
 :::
 
 # III. Building the Future: upgrade the engine while the car is driving
 
+::: {.notes}
+- Now, while we are building and deploying stat programming 2.0, Surya *must* continue to churn out TLFs and so forth as usual. We need a way to swap out the old petrol engine with a new electric/battery drive train: while the vehicle is moving.
+:::
+
 ## Get a handle on our data and code: [over]{.yellow}lay a semantic data model on existing data and code
 
-<!-- ::: {.incremental} -->
-a. Data and code => it's all just ETL, so let's do it properly
-b. Previous efforts to build an ontology, (top down from standards, have so far not delivered)
-  << consider to insert hand drawn summary here >>
-c. Take a different approach (bottom up from code)
-<!-- ::: -->
+<!-- ## {auto-animate=true} -->
+a. Data + Code: distilled to its essence it's ETL, *so let's do it properly*
+b. Previous efforts to build an ontology:
+<br />
+*top down*, from standards
+
+## Get a handle on our data and code: [over]{.yellow}lay a semantic data model on existing data and code
+
+::: columns
+::: {.column width="65%"}
+
+![](images/OpenStudyBuilder01.png)
+:::
+
+::: {.column width="35%"}
+- Knowledge graphs add relationships or *edges* to data points or *nodes*
+- This enables one to *traverse* the *topology* of the database
+:::
+:::
+
+::: footer
+Image credit: https://novo-nordisk.gitlab.io, Novo Nordisk, OpenStudyBuilder
+:::
 
 ::: {.notes}
-Speaker notes go here.
+- So here I've taken an example knowledge graph implementation of clinical data data standards and concept.
+- <zoom-in> Ctrl + mouse click.
+- Yellow CT code list 'VSTEST' => Orange CT term 'Weight' => Green 'ActvityClass' => light green 'VariableClass' => Blue 'Variable' => Vital Signs, which belongs to the Blue 'Dataset', and which is of the 'DataModellIG'
+- As we'll see, overlaying an entire study with a semantic data model delivers enormous power and flexibility for managing the interdependancies of clinical data within and across studies.
+:::
+
+## No free lunch {auto-animate=true}
+<br />
+<br />
+Building an ontology and semantic model for clinical trials is highly specialized and deeply [labor intensive.]{.yellow}
+
+![](images/studyBuilderLogo.png)
+<!-- {.absolute bottom=30 right=-20 height="170"} -->
+
+::: footer
+Image credit: https://novo-nordisk.gitlab.io, Novo Nordisk, OpenStudyBuilder
+:::
+
+::: {.notes}
+- It's an enormous amount of work, which will depend on teh collaboration and agreement of the industry around standardized terminology for the ontology. 
+- Just a side note: in genomics domain useful knowledge graphs have been assembled to represent gene and protein functions and inter-relationships. Many computational laboratories have collaborated now for decades to achieve such value and usability.
+- The OpenStudyBuilder is doing hands down the best job I've seen so far to develop a top down approach for our industry, not least in taking a fully open source approach for the core technology to enable collaboration and contributions across and beyond our industry - since many non-pharma software devs will be needed. Great team. Disclosure: one of the main contributors, Katja Glass is a Bayer employee, although she is doing this independently of her role at Bayer.
+:::
+
+## No free lunch {auto-animate=true}
+<br />
+<br />
+Building an ontology and semantic model for clinical trials is highly specialized and deeply labor intensive.
+<br />
+<br />
+If we want to be faster we'll need a different approach:
+<br />
+[Build it *bottom up*, from the code.]{.yellow}
+<br />
+<br />
+Not only faster, there's more...
+
+::: {.notes}
+
+:::
+
+## How bottom up?
+
+::: columns
+::: {.column width="65%"}
+
+![](images/SDTM-ADaM-CSR-process-overview.jpg)
+:::
+
+::: {.column width="35%"}
+  - *top down* places human text at the top of the process, defining standard ontologies etc.
+  - *bottom up* places executed machine code at the top, of the process, form which standards are defined
+:::
+:::
+
+::: {.notes}
+- summarize existing 'top down' approach.
+- describe briefly the reverse, 'bottom up' approach.
+- Now for the highest value part of my presentation:
+  - *why* bottom up built knowledge graphs will rule the pharma world
+  - And solve all of Surya's problems!!
 :::
 
 ## Bottom up *Knowledge Graphs*: [under]{.yellow}pin a sematic data model on existing data and code
 
-<!-- ::: {.incremental} -->
-a. Not lost in translation: code is _the_ execution level, not documentatation and meta-data strandards, SAPs and so forth
-b. Works with _all_ previous and current code
-c. Machines can parse all the code
-<!-- ::: -->
+a. Not lost in translation: [code is _the_&nbsp;&nbsp;business execution]{.yellow} that delivers value, not documentation and meta-data standards, SAPs and so forth
+b. Works with _all_&nbsp;&nbsp;previous and current code
+c. Machines parse the code and deterministically extract all process logic
 
 ::: {.notes}
 Speaker notes go here.
@@ -323,11 +422,9 @@ Speaker notes go here.
 
 ## Single source of truth feeds other processes
 
-<!-- ::: {.incremental} -->
 a. Create Documentation (definitions and descriptions) for humans
 b. Translate to other languages: R and Python (break out of the SAS trap)
 c. end-to-end tracability with a complete dependancy map: breaking changes
-<!-- ::: -->
 
 ::: {.notes}
 Speaker notes go here.
@@ -335,10 +432,8 @@ Speaker notes go here.
 
 ## But wait, won't LLMs deliver our golden future (and replace humans)?
 
-<!-- ::: {.incremental} -->
 a. In short no, because they are probabilistic and determinism is at the heart of drug development (esp back translation)
 b. But they will be useful for support tasks
-<!-- ::: -->
 
 ::: {.notes}
 Speaker notes go here.
@@ -346,13 +441,11 @@ Speaker notes go here.
 
 ## LLMs will accelerate human efforts (nothing new, but let's run through the existing list)
 
-<!-- ::: {.incremental} -->
 a. Draft text creation: e.g. CSR
 b. Draft code documentation
 c. Draft code creation
 e. Natural language interface to tabular and relational database stores
 f. Synthetic data creation (to liberate clinical data from Silos)
-<!-- ::: -->
 
 ::: {.notes}
 Speaker notes go here.
@@ -362,6 +455,7 @@ Speaker notes go here.
 
 ## Acknowledgements (?)
 Tomas Sabat Stöfsel for opportunity, thoughts on communication and double programming
+Slide Theming Emil Hvitfeldt https://emilhvitfeldt.com
 
 ::: {.notes}
 Speaker notes go here.
