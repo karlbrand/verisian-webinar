@@ -213,7 +213,7 @@ c. Openish source: democratize the tools and processes that we use to make money
 - First: let's let the machines look after versioning our code. Yes, SVN or perhaps Git is in place in companies, but statistical programmers are typically not committing, branching and merging the code they write. SAS code is still written more like a word document on a university students PC, using directory and file names to indicate code history and maturity.
 - The same is true for data in my experience. What else would Surya expect from using files to store data. Even if we were insane we could get these 'files' into a git repo and improve the management of our data and clinical study progress to completion. I'm half joking, just snap-shotting any common relational database would provide large efficiency gains from process perspective. These products are available today, e.g. TerminusDB, Dolt and LakeFS look very interesting.
 
-- Agile development: this is a pet love of mine. Developers have been writing code since before most of us were born. It's a hard job, but after 50 years these clever people have worked out some pretty effective ways to generate the highes quality code with as little time and energy as possible.
+- Agile development: this is a pet love of mine. Developers have been writing code since before most of us were born. It's a hard job, but after 50 years these clever people have worked out some pretty effective ways to generate the highs quality code with as little time and energy as possible.
   - pair programming
   - test driven development
   - sprint cycles: iteration, iteration and more iteration!
@@ -224,7 +224,8 @@ c. Openish source: democratize the tools and processes that we use to make money
 - it all works!
 - stat programming is really missing a lot merely not embracing current software dev best practices... *especially* given the pressures of the regulatory environment.
 
-And third is a mind-set shift around our main assets. Keeping our compound structures and synthesis processes secret and under patent should remain so. But the data we receive from our patients realizes new value in the 'data is the new oil' economy. <To Do>
+And third is a mind-set shift around our main assets. Keeping our compound structures and synthesis processes secret and under patent should remain so. But the data we receive from our patients realizes new value in the 'data is the new oil' economy.
+- There's a lot of untapped value yet locked up in our siloed industry. Taking a little risk to open this up will realize new value.
 
 :::
 
@@ -267,7 +268,7 @@ e. Motivation
 - Macros nested within macros nested within macros, tables inner joined, outer joined, left and right joined from multiple files containers.
 - Is it any wonder stat programming pays as well as it does to have a human understand this?
 
-- <To Do> Note that I said 'until today'. We'll come back to this.
+- Note that I said 'until today'. We'll come back to this.
 
 - Last point, let's be honest: energy is only spent when the motivation is sufficient.
 :::
@@ -401,6 +402,9 @@ Not only faster, there's more...
 
 a. Not lost in translation: [code is _the_&nbsp;&nbsp;business execution]{.yellow} that delivers value (not the so much the other stuff)
 b. Works with _all_&nbsp;&nbsp;previous and current code
+<br />
+[change the *wheels* while the car is driving]{.yellow}
+<br />
 c. Machines parse the code and deterministically extract all process logic
 
 ::: {.notes}
@@ -414,9 +418,12 @@ c. Machines parse the code and deterministically extract all process logic
 
 <!-- ::: {.incremental} -->
 a. deterministic vs probablistic
-a. Fully automate the graph creation
-b. 100% explainable, no halucinations
-c. Universal code logic extraction
+b. Fully automate the graph creation
+<br />
+[change the *engine* while the car is driving]{.yellow}
+<br />
+c. 100% explainable, no halucinations
+d. Universal code logic extraction
 <!-- ::: -->
 
 ::: {.notes}
@@ -447,52 +454,100 @@ c. Breaking changes: [end-to-end tracability]{.yellow} with a complete dependenc
 - point b.: something use 'R' s and Pythonistas like myself will like: using the code logic to aumotically port the SAS code to R, python and pretty much any open source language!
 - shhh: don't tell your SAS contract manager. Seriously, where not trying to replacce SAS, but if you wanted too, this would make it so much easier!
 
-- point c. we bascially covered
-- won't Surya be happy she doesnt have to dig through 10 year old code from a colleague who left 9 years ago and wasn't very generous in commentin ghis code!
+- point c. we basically covered
+- won't Surya be happy she doesn't have to dig through 10 year old code from a colleague who left 9 years ago and wasn't very generous in commenting his code!
+- At this point it's important to clarify that Verisian is focused on delivering just such a product that will automatically read and parse all study SAS code and generate a complete knowledge graph of an entire study.
+- And support everything, and more, that I'm proposing as the benefits of this approach.
+- They've been busy since early last year and, we'll you should connect with Tomas to find out what they're planning to release.
 :::
 
 ## But wait, won't LLMs deliver our golden future (and replace humans)?
 
-a. In short no, because they are probabilistic and determinism is at the heart of drug development (esp back translation)
-b. But they will be useful for support tasks
+a. In short [no]{.yellow}, because they are probabilistic; determinism is at the heart of drug development<br />
+especially for back translation 
+b. But they will be valuable for support tasks
 
 ::: {.notes}
-Speaker notes go here.
+- I hope by now you've understand why determinsm is critical for Surya's line of work and for much fo what we do for bringing medicine to patients.
+- But 18 months after the public have been dazzled by OpenAI's release of ChatGPT we've discovered some nice tricks this technology can perform on our behalf
 :::
 
-## LLMs will accelerate human efforts (nothing new, but let's run through the existing list)
+## LLMs will accelerate human efforts 
 
-a. Draft text creation: e.g. CSR
+### (nothing new, but let's run through the existing list)
+
+a. Draft text creation, e.g. [CSR]{.yellow}
 b. Draft code documentation
 c. Draft code creation
 e. Natural language interface to tabular and relational database stores
-f. Synthetic data creation (to liberate clinical data from Silos)
+f. Synthetic data creation (to [liberate]{.yellow} clinical data from silos)
 
 ::: {.notes}
-Speaker notes go here.
+- I expect most of us on the call will be familiar with what's on this list by now
+- It's not exhaustive so my apologies if your application of the technology is not listed here
+- But pelase DO share your bold use of LLMs in the  Q and A
+
+- First of course is the long, written for humans monster of a word document, the Clinical Study Report. It's already a pretty standardized assmebley of many Microsoft Word templates and macros
+- So this plays very much to LLMs strengths of generating convincingly useful text. Still needs a human to verify and review for hallucinations
+
+- Second - documenting our code, both pre-existing and as it's being created. Few sane humans enjoy this process and LLMs do this very well. An obvious win.
+
+- Third - same for code generation.
+I'm curious - have you used Microsoft's co-pilot in VScode or another IDE yet?
+
+- Point d. Most of the industry stores most of it's data as tables in flat files. And most of the industries medically trained staff spend most of their time clumsily scrolling through these tables, applying filters or writing excel equations to get the insights they're seeking from them.
+- LLMs do away with the clumsiness and accelerate extracting insights from our tabular data
+
+- Last is something I've been interested in for some years: generating synthetic clinical trial data.
+- Not for the purpose of replacing patients, though that itself is an interesting topic.
+- No, I'm interested in generating fully de-identifiable, or rather NON-re-identifiable data that retains the original data's variable interdependence and inter-correlation structures.
+- Such data-sets are generally considered no longer human data and thus free from much or all of the legal and ethical limitations as the source data.
+- Without these limitations, we finally enter the data-scientists wheel house, pool the data to increase sampling power, sharpen insights, and make new discoveries.
+- I hope yo ucan imagien the possibilities of working with patient data as if it were train arrival and departure times.
+- BUT - generating NON-re-identifiable that retains the original datas utility is a fine balance.
+- Initial efforts with LLMs are showing their probabilistic value across complex data like patient data.
 :::
 
-## Summary
+## Summary {auto-animate=true} 
 
-## Acknowledgements (?)
-Tomas Sabat Stöfsel for opportunity, thoughts on communication and double programming
-Slide Theming Emil Hvitfeldt https://emilhvitfeldt.com
-
-::: {.notes}
-Speaker notes go here.
-:::
-
-## Notes
+- The challenges communicating clinical trial outcomes to authorities have exceeded our industries existing capabilities
+- We have both the motivation and the tools to address this
+- Weaving clinical trials into knowledge graphs supports a *huge* yet *achievable* advance for all stakeholders
+- Automated knowledge-graph generation from code allows us to upgrade processes [[engine and wheels]]{.yellow} on the fly, no tools required
+- LLMs are finding many use-cases outside those requiring full explainability 
 
 ::: {.notes}
-Follow up talk? Liekly only wetted your appetite, though hope there was enough to get you going.
-
-Deliverable: motivate to action:
+- Deliverable: motivate to action:
 Motivate you and your team, your entire company to take action today:
 <br />
 *Go get after it!*
 
-Tamr - as next level ETL
+:::
 
-First mention of TLF: where shoudl it bne? Make it emphasized
+## Acknowledgements
+<br />
+<br />
+
+- Tomas Sabat Stöfsel and the entire [Verisian Team]{.yellow}
+- Slide theme by Emil Hvitfeldt https://emilhvitfeldt.com
+
+::: {.notes}
+- Huge thanks to Tomas, for opportunity to present these propositions 
+- And for valuable discussion on philosophy of communication, double programming and more
+:::
+
+## Q&A
+<br />
+<br />
+
+- Find me: https://www.linkedin.com/in/karlbrand/
+- This presentation: https://github.com/karlbrand/verisian-webinar
+
+::: {.notes}
+- Likely only wetted your appetite, though hope there was enough to get you going.
+- Follow up talk? 
+
+<To Do>
+- Tamr - as next level ETL
+- First mention of TLF: where should it be? Make it emphasized.
 :::
